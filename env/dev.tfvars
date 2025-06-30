@@ -1,0 +1,10 @@
+vpc_cidr           = "10.0.0.0/16"
+s3_bucket_name     = "terraform-demo-dev-bucket"
+ami                = "ami-0c55b159cbfafe1f0"
+instance_type      = "t2.micro"
+db_allocated_storage = 20
+db_engine          = "mysql"
+db_instance_class  = "db.t3.micro"
+db_name            = "devdb"
+db_username        = "admin"
+db_password        = "password123"
