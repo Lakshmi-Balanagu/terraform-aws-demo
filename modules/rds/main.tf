@@ -6,4 +6,17 @@ resource "aws_db_instance" "default" {
   username             = var.username
   password             = var.password
   skip_final_snapshot  = true
+
+  multi_az             = true
+
+  # Optional but recommended
+  backup_retention_period = 7
+  publicly_accessible     = false
+  storage_encrypted       = true
+  deletion_protection     = true
+
+  tags = {
+    Name = "demo-rds-instance"
+    Environment = var.environment
+  }
 }
