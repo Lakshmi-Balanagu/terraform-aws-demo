@@ -1,0 +1,10 @@
+vpc_cidr           = "10.0.0.0/16"
+s3_bucket_name     = "terraform-demo-prod-bucket"
+ami                = "ami-0c55b159cbfafe1f0"
+instance_type      = "t3.micro"
+db_allocated_storage = 50
+db_engine          = "postgres"
+db_instance_class  = "db.t3.medium"
+db_name            = "proddb"
+db_username        = "admin"
+db_password        = "securepassword456"
